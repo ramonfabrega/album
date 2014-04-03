@@ -32,6 +32,7 @@
 	        divTag.id = i;
 	        divTag.className = "divContainer";
 	        document.body.appendChild(divTag);
+	        divTag.onclick = function(){this.parentNode.removeChild(this)};
 	        var pTg = document.createElement("p");
 	        pTg.setAttribute("align", "center");
 	        pTg.className = "text";
