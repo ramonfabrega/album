@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta name="viewport" content="width=203">
+	<title>Lista Mundial</title>
+	
+	<style>
+		body {
+    		width: 1120px;
+		}
+		.divContainer {
+		    width: 35px;
+		    height: 25px;
+		    border: solid 1px #c0c0c0;  
+		    background-color: #e1e1e1;
+		    font-family: verdana;  
+		    color: #000;
+		    float: left;
+		}
+
+		.text {
+		    font-size: 15px;
+		    font-family: verdana;
+		    color: black;
+		    margin-top: 4px;
+		}
+
+	</style>
+
+</head>
+<body>
+    <script type="text/javascript">
+        for(var i = 1; i <= 639; i++){
+	        var divTag = document.createElement("div");
+	        divTag.id = i;
+	        divTag.className = "divContainer";
+	        document.body.appendChild(divTag);
+	        var pTg = document.createElement("p");
+	        pTg.setAttribute("align", "center");
+	        pTg.className = "text";
+	        pTg.innerHTML = (i);
+	        document.getElementById(i).appendChild(pTg);
+    	}
+    </script>
+</body>
+</html>
