@@ -4,6 +4,12 @@
 	<meta name="viewport" content="width=203">
 	<title>Lista Mundial</title>
 	
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('div').click(function(){
+        		$(this).hide();
+    	});
+});</script>
 	<style>
 		.divContainer {
 		    width: 35px;
@@ -35,7 +41,7 @@
 	        divTag.id = i;
 	        divTag.className = "divContainer";
 	        document.body.appendChild(divTag);
-	        divTag.ondblclick = function(){this.parentNode.removeChild(this)};
+	        //divTag.ondblclick = function(){this.parentNode.removeChild(this)};
 	        var pTg = document.createElement("p");
 	        pTg.setAttribute("align", "center");
 	        pTg.className = "text";
