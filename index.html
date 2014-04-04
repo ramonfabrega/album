@@ -34,14 +34,13 @@
 
 </head>
 <body>
-	<h4>Double click para borrar un numero</h4>
+	<h4>Click para highlight un numero</h4>
     <script type="text/javascript">
         for(var i = 1; i <= 639; i++){
 	        var divTag = document.createElement("div");
 	        divTag.id = i;
 	        divTag.className = "divContainer";
 	        document.body.appendChild(divTag);
-	        //divTag.onclick = function(){this.parentNode.removeChild(this)};
 	        var pTg = document.createElement("p");
 	        pTg.setAttribute("align", "center");
 	        pTg.className = "text";
