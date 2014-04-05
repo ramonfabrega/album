@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<meta name="viewport" content="width=203">
-	<title>Lista Mundial</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	<script src="jquery.js"></script>
-	<link href="styling.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<h4>Click para highlight un numero <br>Delete para borrarlos de la lista</h4>
-	<div id="button">Delete</div>
-	<div id="filler"></div>
-    <script type="text/javascript">
-        for(var i = 1; i <= 639; i++){
-	        var divTag = document.createElement("div");
-	        divTag.id = i;
-	        divTag.className = "divContainer";
-	        document.body.appendChild(divTag);
-	        var pTg = document.createElement("p");
-	        pTg.setAttribute("align", "center");
-	        pTg.className = "text";
-	        pTg.innerHTML = (i);
-	        document.getElementById(i).appendChild(pTg);
-    	}
-    </script>
-</body>
+	<head> 
+		<meta name="viewport" content="width=203">
+		<title>Lista Mundial</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="album.js"></script>
+		<link href="styling.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h4>Click para highlight un numero <br>Delete para borrarlos de la lista</h4>
+		<div id="button">Delete</div>
+		<div id="filler"></div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			makeList();
+			bindClickEvent();
+		});
+		</script>
+	</body>
 </html>
-
-<!-- Agregar un toggleclass que los highlight a los q quiere borrar
-	agregar un boton que despues borre todos los div que tienen el nuevo class
-	de alguna manera save lo que esta pasando
-	buscar colors rgb para cambiar la mierda de colores
-	-->
