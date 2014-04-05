@@ -18,7 +18,7 @@ function bindClickEvents(){
 	});
 	$('#button').click(function(){
 		if(confirm("Press enter to delete")){
-			('.selected').remove();
+			$('.selected').remove();
 		}
 	});
 }
