@@ -1,11 +1,15 @@
 var TOTAL_STICKERS = 639;
 var selectedIds = [];
 var missingUserStickers = (function(){
-	var arr = [];
-	for(var i = 1; i <= TOTAL_STICKERS; i++){
-		arr.push(i);
+	if(localStorage.getItem("missingUserStickers") == null){
+		var arr = [];
+		for(var i = 1; i <= TOTAL_STICKERS; i++){
+			arr.push(i);
+		}
+		return arr;
+	}else{
+		return JSON.parse(localStorage.getItem("missingUserStickers"));
 	}
-	return arr;
 })();
 
 function makeList(){
