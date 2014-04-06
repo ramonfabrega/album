@@ -32,9 +32,14 @@ function bindClickEvents(){
 	$('.divContainer').click(function(){
 		$(this).toggleClass('selected');
 	});
-	$('#button').click(function(){
+	$('#delete').click(function(){
 		if(confirm("Press enter to delete")){
 			deleteSelected();			
+		}
+	});
+	$('#reset').click(function(){
+		if(confirm("Press enter to RESET")){
+			resetList();
 		}
 	});
 }
@@ -56,4 +61,9 @@ function removeFromMissingUserStickers (number){
 	if (toDelete > -1){
 		missingUserStickers.splice(toDelete, 1);
 	}
+}
+
+function resetList(){
+	localStorage.removeItem("missingUserStickers");
+	location.reload(true);
 }

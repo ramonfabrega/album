@@ -22,7 +22,7 @@ h4 {
 .selected {
      background-color: yellow;
 }
-#button{               
+.button{               
   border-radius: 30px;
   border-top: solid 1px #cbcbcb;
   border-left: solid 1px #b7b7b7;
@@ -37,6 +37,7 @@ h4 {
   height: 10px;
   box-shadow: 0px 1px 5px #e8e8e8;
   text-align: center;
+  margin-top: 2px;
 }
 
 #filler{
