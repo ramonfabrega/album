@@ -41,7 +41,7 @@ h4 {
   float: left;
 }
 
-.buttonContainer{
+#buttonContainer{
   margin-bottom: 10px;
   display: block;
   border: solid 1px black;

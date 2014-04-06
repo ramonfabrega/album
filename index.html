@@ -10,17 +10,16 @@
 	</head>
 	<body>
 		<h4>Click para seleccionar un numero <br>Delete para borrarlos de la lista</h4>
-		<div class="buttonContainer">
+		<div id="buttonContainer">
 			<div id="delete" class="button">Delete</div>
 			<div id="reset" class="button">Reset</div>
 		</div>
-		<div class="buttonContainer">
-			<script type="text/javascript">
+		<div id="listContainer"></div>
+	</body>
+				<script type="text/javascript">
 			$(document).ready(function(){
 				makeList();
 				bindClickEvents();
 			});
 			</script>
-		</div>
-	</body>
 </html>
