@@ -40,7 +40,6 @@ h4 {
   margin-top: 2px;
 }
 
-#filler{
-    width: 10px;
-    height: 10px;
+.buttonContainer{
+  margin-bottom: 10px;
 }
