@@ -3,7 +3,7 @@ var selectedIds = [];
 var missingUserStickers = (function(){
 	if(localStorage.getItem("missingUserStickers") == null){
 		var arr = [];
-		for(var i = 1; i <= TOTAL_STICKERS; i++){
+		for(var i = 0; i <= TOTAL_STICKERS; i++){
 			arr.push(i);
 		}
 		return arr;
