@@ -22,8 +22,8 @@ function makeListItem (itemNumber){
 	divTag.className = "divContaine";
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
-//	pTg.setAttribute("align", "center");
-	pTg.className = "text .text-center";
+	pTg.setAttribute("align", "center");
+	pTg.className = "text-center";
 	pTg.innerHTML = (itemNumber);
 	document.getElementById(itemNumber).appendChild(pTg);
 }
