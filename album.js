@@ -19,11 +19,11 @@ function makeList(){
 function makeListItem (itemNumber){
 	var divTag = document.createElement("div");
 	divTag.id = itemNumber;
-	divTag.className = "divContaine";
+	divTag.className = "divContainer";
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 	pTg.setAttribute("align", "center");
-	pTg.className = "text-center";
+	pTg.className = "text";
 	pTg.innerHTML = (itemNumber);
 	document.getElementById(itemNumber).appendChild(pTg);
 }
