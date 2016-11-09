@@ -22,6 +22,7 @@ h4 {
 .selected {
      background-color: yellow;
 }
+/*
 .button{               
   border-radius: 30px;
   border-top: solid 1px #cbcbcb;
@@ -40,6 +41,7 @@ h4 {
   margin-right: 3px;
   float: left;
 }
+*/
 
 #buttonContainer{
   margin-bottom: 60px;
