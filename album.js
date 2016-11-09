@@ -23,7 +23,7 @@ function makeListItem (itemNumber){
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 //	pTg.setAttribute("align", "center");
-	pTg.className = ".text-center";
+	pTg.className = "text .text-center";
 	pTg.innerHTML = (itemNumber);
 	document.getElementById(itemNumber).appendChild(pTg);
 }
