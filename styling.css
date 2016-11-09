@@ -6,6 +6,7 @@
     font-family: verdana;
     float: left;
 }
+/*
 .text {
     font-size: 15px;
     font-family: verdana;
@@ -22,7 +23,7 @@ h4 {
 .selected {
      background-color: yellow;
 }
-/*
+
 .button{               
   border-radius: 30px;
   border-top: solid 1px #cbcbcb;
