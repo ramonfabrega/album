@@ -20,7 +20,7 @@ function makeListItem (itemNumber){
 	var divTag = document.createElement("div");
 	divTag.id = 
 	divTag.id = itemNumber;
-	divTag.className = "col-xs-1 divContainer";
+	divTag.className = "col-xs-1";
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 	pTg.setAttribute("align", "center");
@@ -30,7 +30,7 @@ function makeListItem (itemNumber){
 }
 
 function bindClickEvents(){
-	$('.col-xs-1.divContainer').click(function(){
+	$('.col-xs-1').click(function(){
 		$(this).toggleClass('selected');
 	});
 	$('#delete').click(function(){
