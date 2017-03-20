@@ -18,13 +18,12 @@ function makeList(){
 
 function makeListItem (itemNumber){
 	var divTag = document.createElement("div");
-	divTag.id = 
 	divTag.id = itemNumber;
 	divTag.className = "col-xs-1 divContainer text-center";
+	divTag.setAttribute("vertical-align", "middle");
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 // 	pTg.setAttribute("align", "center");
-	pTg.setAttribute("vertical-align", "middle");
 // 	pTg.className = "text";
 // 	pTg.className = "text-center";
 	pTg.innerHTML = (itemNumber);
