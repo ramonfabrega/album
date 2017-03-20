@@ -20,7 +20,7 @@ function makeListItem (itemNumber){
 	var divTag = document.createElement("div");
 	divTag.id = 
 	divTag.id = itemNumber;
-	divTag.className = "col-xs-1 divContainer text-center";
+	divTag.className = "col-xs-1 divContainer";
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 // 	pTg.setAttribute("align", "center");
