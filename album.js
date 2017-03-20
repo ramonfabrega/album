@@ -26,6 +26,7 @@ function makeListItem (itemNumber){
 // 	pTg.setAttribute("align", "center");
 // 	pTg.className = "text";
 	pTg.className = "text-center";
+	pTg.setAttribute("vertical-align", "middle");
 	pTg.innerHTML = (itemNumber);
 	document.getElementById(itemNumber).appendChild(pTg);
 }
