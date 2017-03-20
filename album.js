@@ -18,8 +18,9 @@ function makeList(){
 
 function makeListItem (itemNumber){
 	var divTag = document.createElement("div");
+	divTag.id = 
 	divTag.id = itemNumber;
-	divTag.className = "col-md-1";
+	divTag.className = "col-md-1 divContainer";
 	document.getElementById("listContainer").appendChild(divTag);
 	var pTg = document.createElement("p");
 	pTg.setAttribute("align", "center");
@@ -29,7 +30,7 @@ function makeListItem (itemNumber){
 }
 
 function bindClickEvents(){
-	$('col-md-1').click(function(){
+	$('divContainer').click(function(){
 		$(this).toggleClass('selected');
 	});
 	$('#delete').click(function(){
