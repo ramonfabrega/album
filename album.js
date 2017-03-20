@@ -30,7 +30,7 @@ function makeListItem (itemNumber){
 }
 
 function bindClickEvents(){
-	$('divContainer').click(function(){
+	$('col-md-1 divContainer').click(function(){
 		$(this).toggleClass('selected');
 	});
 	$('#delete').click(function(){
